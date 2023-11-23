@@ -1,4 +1,4 @@
-FROM go:alpine AS builder
+FROM golang:alpine AS builder
 WORKDIR /app
 COPY . .
 RUN go build -o main .
